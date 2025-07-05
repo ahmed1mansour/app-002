@@ -4,6 +4,7 @@ import Footer from './structure/Footer';
 import Btn from './components/Btn';
 import Btn2 from './components/Btn2';
 import Alert from './components/Alert';
+import Card from './components/Card';
 
 export default function App() {
 
@@ -59,18 +60,38 @@ export default function App() {
         <Btn color='white'>Cancel</Btn>
       </Alert>
 
+      <p className='bg-emerald-500'>SOME COLORED TEXT</p>
       <Footer >  </Footer>
 
 
+      <div className="flex justify-center gap-4 flex-wrap bg-slate-800">
+        <Card
+          title="Kareem"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus reiciendis explicabo, quo voluptatem illo dolores! Voluptas distinctio ipsa soluta recusandae!"
+          button1="Add"
+          button2="Remove"
+          button1_color="sky"
+          button2_color="red"
+        />
+        <Card
+          title="A.Mansour"
+          description="This is card 2"
+          button1="Reset"
+          button2="Cancel"
+          button1_color="red"
+          button2_color="emerald"
+        />
+        <Card
+          title="Maged"
+          description="This is a new Card"
+          button1="Save"
+          button2="Close"
+          button1_color="green"
+          button2_color="teal"
+        />
+      </div>
 
 
-      <Card title='Card Header' btn1='Save' btn2='Cancel' btn1Color='green' btn2Color='red'>
-        Any thing you need
-      </Card>
-
-      <Card title='Card Confirmation' btn1='Delete' btn2='Close' btn1Color='red' btn2Color='yellow'>
-        Yet any thing you need
-      </Card>
 
 
       {/* 
