@@ -2,49 +2,50 @@
 @plugin "flowbite-react/plugin/tailwindcss";
 @source "../.flowbite-react/class-list.json";
 
-
 @theme {
-    --color-primary: #007bff;
-    --color-secondary: #6c757d;
-    --color-success: #28a745;
-    --color-danger: #dc3545;
-    --color-maged: #368;
-    --color-hawaiian-tan-50: #fcf7ea;
-    --color-hawaiian-tan-100: #f7edca;
-    --color-hawaiian-tan-200: #f1d997;
-    --color-hawaiian-tan-300: #e8be5c;
-    --color-hawaiian-tan-400: #e0a42f;
-    --color-hawaiian-tan-500: #d08d22;
-    --color-hawaiian-tan-600: #b46c1a;
-    --color-hawaiian-tan-700: #99531a;
-    --color-hawaiian-tan-800: #783f1b;
-    --color-hawaiian-tan-900: #66361d;
-    --color-hawaiian-tan-950: #3b1a0d;
+  --color-primary: #007bff;
+  --color-secondary: #6c757d;
+  --color-success: #28a745;
+  --color-danger: #dc3545;
+  --color-maged: #368;
+  --color-hawaiian-tan-50: #fcf7ea;
+  --color-hawaiian-tan-100: #f7edca;
+  --color-hawaiian-tan-200: #f1d997;
+  --color-hawaiian-tan-300: #e8be5c;
+  --color-hawaiian-tan-400: #e0a42f;
+  --color-hawaiian-tan-500: #d08d22;
+  --color-hawaiian-tan-600: #b46c1a;
+  --color-hawaiian-tan-700: #99531a;
+  --color-hawaiian-tan-800: #783f1b;
+  --color-hawaiian-tan-900: #66361d;
+  --color-hawaiian-tan-950: #3b1a0d;
 
-    --theme-color: #882;
+  --theme-color: #882;
 
+  /* Modify */
+  /* --spacing: 1px; */
 
-    /* Modify */
-    /* --spacing: 1px; */
+  /* Animations */
 
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
 
-    /* Animations */
-
-    --animate-wiggle: wiggle 1s ease-in-out infinite;
-
-    @keyframes wiggle {
-
-        0%,
-        100% {
-            transform: rotate(-3deg);
-        }
-
-        50% {
-            transform: rotate(3deg);
-        }
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-3deg);
     }
+
+    50% {
+      transform: rotate(3deg);
+    }
+  }
 }
 
 * {
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Custom Classes */
+.btn {
+  @apply px-6 py-2 rounded-lg shadow-md uppercase cursor-pointer active:brightness-90;
 }
