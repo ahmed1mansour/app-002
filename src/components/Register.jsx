@@ -22,31 +22,7 @@ const Register = () => {
     const [mobile, setMobile] = useState('');
     const testmobile = /^01[0125][0-9]{8}$/;
 
-    // let text_mobile = "";
-    // let text_mobile_co = '';
-    // let number_co = "";
-
-    // if (mobile == '') {
-    //     text_mobile = '';
-    // } else if (mobile == "0") {
-    //     text_mobile = "";
-    // } else if (mobile == "01") {
-    //     text_mobile = "";
-    // } else if (!mobile.startsWith("012") && !mobile.startsWith("011") && !mobile.startsWith("010") && !mobile.startsWith("015")) {
-    //     text_mobile = "start / 012 / 011 / 010 / 015";
-    //     text_mobile_co = "text-red-600 ";
-    // } else if (mobile.length > 11) {
-    //     text_mobile = "Invalid number";
-    //     text_mobile_co = "text-red-600";
-    //     number_co = "text-red-600";
-    // } else if (mobile.length == 11) {
-    //     text_mobile = "Valid";
-    //     text_mobile_co = "text-green-400";
-    //     number_co = "text-green-400";
-    // } else {
-    //     text_mobile = "Incomplete number";
-    //     text_mobile_co = "text-yellow-200";
-    // }
+    
 
     // email
     const [email, setEmail] = useState('');
