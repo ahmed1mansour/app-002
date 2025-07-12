@@ -1,4 +1,4 @@
-import Counter from "./components/Counter";
+
 import Register from "./components/Register";
 
 
